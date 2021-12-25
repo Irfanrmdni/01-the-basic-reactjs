@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic ReactJS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: axiforma, sans-serif;
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ? react js adalah :
+        * 1. sebuah framework javascript yang berfungsi untuk membangun user interface
+        * 2. code html nya langsung ditulis di dalam javasciprt 
+        * 3. untuk membuat sebuah single page applicaiton (tanpa reload page atau halaman)
+    
+    ? sintaks untuk membuat element dengan react
+    * parameter 1 untuk menyimpan tag html
+    * parameter 2 untuk menyimpan properti bentuknya object
+    * parameter 3 untuk menyimpan children
+    * const element = React.createElement(parameter-1, parameter-2, parameter-3);
+    
+    * untuk properti nya bisa berupa className dll.
+    * children bisa digunakan untuk membuat text biasa atau menyimpan element dalam bentuk array
+
+    ? sintaks untuk merender react
+    * element = element apa yang mau dirender
+    * root = dimana kita mau menyimpan render element nya
+    * ReactDOM.render(element, root);
+
+    ? React.Fragment
+    * sama dengan empty/kosong. jadi ketika mau menyimpan banyak element untuk dirender
+    * dan kita tidak mau membuat pembungkus/parent nya maka kita bisa gunakan sintaks tersebut
+    
+    ? JSX code javascript yang bukan stadar jadi harus dicompile dulu menggunakan babel javascript
+    * untuk memanggil variabel di JSX ini mirip dengan template literal namun JSX cukup gunakan tanda {} saja
+    * isinya bisa berupa function, variabel dll.
+    * jika ingin menambahkan class pada tag html cukup guakan className
+    * jika ingin menyimpan variabel di className. yang isinya nama class maka jangan gunakan tanda '' atau ""
+    * jika menggunakan empty elemen HTML seperti input, img, br, dll. kita harus gunakan tanda / di akhir penutup tag
+    
+    ? react component adalah function yang me-return react element. dan nama function nya diawalid engan huruf besar 
+-->
+
+    <div id="root"></div>
+
+
+
+
+
+
+
+
+    <!-- ? cdn babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- ? cdn reactjs -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- ? vanilla javascript -->
+    <script src="script.js" type="text/babel"></script>
+
+</body>
+
+</html>
